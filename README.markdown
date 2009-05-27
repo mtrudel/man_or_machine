@@ -1,12 +1,12 @@
-h1. Man or Machine 
+# Man or Machine 
 
-h2. Description
+## Description
 
 Simple component for Adhearsion to distinguish the far end of a phone as being an answering machine or a human, and to take differing actions as a result. Uses Asterisk's built-in AMD() application.
 
 Only really useful for outbound calls, obviously.
 
-h2. Example
+## Example
 
 Place this in your dialplan.rb of your Adhearsion project:
 
@@ -38,7 +38,7 @@ Place this in your dialplan.rb of your Adhearsion project:
 	</code>
 	</pre>
 		
-h2. Installation
+## Installation
 
 1. Ensure that your asterisk installation has app_amd.so loaded as a module.
 
@@ -46,6 +46,4 @@ h2. Installation
 
 <pre>git clone git://github.com/mtrudel/man_or_machine.git</pre>
 
-3. Then add the example code from above to your ~adhearsion-project/dialplan.rb.
-
-Then you're off and running!
+3. Add the example code from above to your ~adhearsion-project/dialplan.rb.
