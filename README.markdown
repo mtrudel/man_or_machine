@@ -10,8 +10,6 @@ Only really useful for outbound calls, obviously.
 
 Place this in your dialplan.rb of your Adhearsion project:
 
-    <pre>
-	<code>
 	outbound {
     man_or_machine do |call|
         call.man do
@@ -35,8 +33,6 @@ Place this in your dialplan.rb of your Adhearsion project:
         end
       end
     }
-	</code>
-	</pre>
 		
 ## Installation
 
