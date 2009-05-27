@@ -12,28 +12,28 @@ Place this in your dialplan.rb of your Adhearsion project:
 
 	outbound {
     man_or_machine do |call|
-        call.man do
-          # Executed when a human is at the other end
-          ahn_log.agi.info "IT'S A MAN"
-        end
-
-        call.machine do
-          # Executed when an answering machine is at the other end
-          ahn_log.agi.info "IT'S A MACHINE"
-        end
-
-        call.notsure do
-          # Executed when we can't tell what's at the other end
-          ahn_log.agi.info "WHO KNOWS"
-        end
-
-        call.hangup do
-          # Executed if the remote end hung up while we were trying to determine 
-          ahn_log.agi.info "HANGUP"
-        end
+      call.man do
+        # Executed when a human is at the other end
+        ahn_log.agi.info "IT'S A MAN"
       end
-    }
-		
+
+      call.machine do
+        # Executed when an answering machine is at the other end
+        ahn_log.agi.info "IT'S A MACHINE"
+      end
+
+      call.notsure do
+        # Executed when we can't tell what's at the other end
+        ahn_log.agi.info "WHO KNOWS"
+      end
+
+      call.hangup do
+        # Executed if the remote end hung up while we were trying to determine 
+        ahn_log.agi.info "HANGUP"
+      end
+    end
+  }
+  
 ## Installation
 
 1. Ensure that your asterisk installation has app_amd.so loaded as a module.
