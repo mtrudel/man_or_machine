@@ -34,4 +34,9 @@ methods_for :dialplan do
     chosen_handler = handler.handlers[get_variable("AMDSTATUS")]
     chosen_handler.call unless chosen_handler.nil?
   end
+
+  def wait_for_answering_machine_beep
+    execute("WaitForSilence")
+    execute("WaitForSilence")
+  end
 end

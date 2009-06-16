@@ -20,6 +20,9 @@ Place this in your dialplan.rb of your Adhearsion project:
         call.machine do
           # Executed when an answering machine is at the other end
           ahn_log.agi.info "IT'S A MACHINE"
+
+          # (Optionaly) wait for the answering machine beep to happen before playing sounds
+          #wait_for_answering_machine_beep
         end
 
         call.notsure do
